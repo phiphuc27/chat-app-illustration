@@ -36,6 +36,20 @@ body {
   border-bottom-left-radius: 50% 30%;
 }
 
+.container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -12%;
+  z-index: -2;
+  width: 500px;
+  height: 700px;
+  background: hsl(270, 20%, 96%);
+  border-top-right-radius: 50% 40%;
+  border-top-left-radius: 50% 30%;
+  opacity: 0.6;
+}
+
 .phone {
   margin-left: 365px;
   position: relative;
@@ -250,14 +264,14 @@ body {
 
 .title h1 {
   font-size: 42px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 40px;
   color: hsl(271, 36%, 24%);
 }
 
 .title p {
   color: hsl(270, 7%, 64%);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .attribution {
